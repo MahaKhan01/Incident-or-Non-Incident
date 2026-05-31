@@ -25,6 +25,13 @@ if not MODEL_PATH.exists():
     url = "https://drive.google.com/file/d/18XYEm2JxVKv2dd7EnUBRiBPS3G36Kuw_/view?usp=drive_link"
     gdown.download(url, str(MODEL_PATH), quiet=False, fuzzy=True)
 
+MODEL_CANDIDATES = [
+    Path("models/best_incident_model.keras"),
+    Path("best_incident_model.keras"),
+    Path("/content/models/best_incident_model.keras"),
+    Path("/content/best_incident_model.keras"),
+]
+
 DEFAULT_IMG_SIZE = (224, 224)
 
 st.set_page_config(
