@@ -134,7 +134,7 @@ st.markdown(
     }}
 
     .block-container {{
-        padding-top: 3rem;
+        padding-top: 5rem;
         padding-bottom: 2rem;
         max-width: 1000px;
     }}
